@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我的客户</title>
+
+    <!-- Bootstrap -->
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/style.css">
+
+    <script type="text/javascript">
+
+        //html root的字体计算应该放在最前面，这样计算就不会有误差了/
+        //2016.3.23 wjq update 之所以要加个判断返回一个20.5，是因为当用户在谷歌等浏览器直接输入手机端网站网址时，如果用户设置模块自定义样式的高度比较小，由于这时候的clientWidth为1920px，及返回的_htmlFontSize为40，这时候就会使模块太小，展示不完全，因此先取一个较为准确的值去展示。Mobi.resetHtmlFontSize()顺便也加了
+        var _htmlFontSize = (function(){
+            var clientWidth = document.documentElement ? document.documentElement.clientWidth : document.body.clientWidth;
+            if(clientWidth > 640) clientWidth = 640;
+            document.documentElement.style.fontSize = clientWidth * 1/6.4+"px";
+            return clientWidth * 1/6.4;
+        })();
+    </script>
+</head>
+<body class="html">
+<div class="content">
+    <div class="clearfix header text-center">
+        <a class="img-r" href="#"><img src="resources/images/right1.png" alt=""></a>
+        <div class="head-tt">我的客户</div>
+    </div>
+</div>
+<div class="bs-example pace-head" data-example-id="bordered-table">
+    <table class="table table-bordered client-tab">
+        <tbody>
+        <tr class="head-tr">
+            <td>头像</td>
+            <td>客户姓名</td>
+        </tr>
+        <tr>
+            <td class="user-img"><img src="resources/images/21.png" alt=""></td>
+            <td class="user-na">周杰伦</td>
+        </tr>
+        <tr>
+            <td class="user-img"><img src="resources/images/21.png" alt=""></td>
+            <td class="user-na">周杰伦</td>
+        </tr>
+        <tr>
+            <td class="user-img"><img src="resources/images/21.png" alt=""></td>
+            <td class="user-na">周杰伦</td>
+        </tr>
+        <tr>
+            <td class="user-img"><img src="resources/images/21.png" alt=""></td>
+            <td class="user-na">周杰伦</td>
+        </tr>
+        <tr>
+            <td class="user-img"><img src="resources/images/21.png" alt=""></td>
+            <td class="user-na">周杰伦</td>
+        </tr>
+        <tr>
+            <td class="user-img"><img src="resources/images/21.png" alt=""></td>
+            <td class="user-na">周杰伦</td>
+        </tr>
+        <tr>
+            <td class="user-img"><img src="resources/images/21.png" alt=""></td>
+            <td class="user-na">周杰伦</td>
+        </tr>
+        <tr>
+            <td class="user-img"><img src="resources/images/21.png" alt=""></td>
+            <td class="user-na">周杰伦</td>
+        </tr>
+        <tr>
+            <td class="user-img"><img src="resources/images/21.png" alt=""></td>
+            <td class="user-na">周杰伦</td>
+        </tr>
+        <tr>
+            <td class="user-img"><img src="resources/images/21.png" alt=""></td>
+            <td class="user-na">周杰伦</td>
+        </tr>
+        <tr>
+            <td class="user-img"><img src="resources/images/21.png" alt=""></td>
+            <td class="user-na">周杰伦</td>
+        </tr>
+        <tr>
+            <td class="user-img"><img src="resources/images/21.png" alt=""></td>
+            <td class="user-na">周杰伦</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+</body>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="resources/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="resources/js/bootstrap.min.js"></script>
+
+</html>

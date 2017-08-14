@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>商品详情</title>
+
+    <!-- Bootstrap -->
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/style.css">
+
+    <script type="text/javascript">
+
+        //html root的字体计算应该放在最前面，这样计算就不会有误差了/
+        //2016.3.23 wjq update 之所以要加个判断返回一个20.5，是因为当用户在谷歌等浏览器直接输入手机端网站网址时，如果用户设置模块自定义样式的高度比较小，由于这时候的clientWidth为1920px，及返回的_htmlFontSize为40，这时候就会使模块太小，展示不完全，因此先取一个较为准确的值去展示。Mobi.resetHtmlFontSize()顺便也加了
+        var _htmlFontSize = (function(){
+            var clientWidth = document.documentElement ? document.documentElement.clientWidth : document.body.clientWidth;
+            if(clientWidth > 640) clientWidth = 640;
+            document.documentElement.style.fontSize = clientWidth * 1/6.4+"px";
+            return clientWidth * 1/6.4;
+        })();
+    </script>
+</head>
+<body class="html">
+<!--内容部分-->
+<div class="service-details">
+    <img style="width: 100%;" src="resources/images/09.png" alt="">
+    <div class="service-title1">往往宠物医院</div>
+    <div class="clearfix service-con2">
+        <div class="pull-left address-t1">
+            <a href="">硚口区古田三路凯景国际大厦旁旺旺宠物医院</a>
+        </div>
+        <div class="pull-right call"><a href=""></a></div>
+    </div>
+    <ul class="details-s">
+        <li>
+            <div class="list-t1">服务列表</div>
+        </li>
+        <li>
+            <a href="petDetails.html">
+                <div class="detail-sl">
+                    <div class="title-d1">宠物标准美容</div>
+                    <div class="clearfix">
+                        <div class="left-v">
+                            <div class="service-price"><span>¥</span>288</div>
+                            <div class="title-l3">¥488</div>
+                            <div class="title-l4">已售 66688</div>
+                        </div>
+                        <div class="right-v">积分288</div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="petDetails.html">
+                <div class="detail-sl">
+                    <div class="title-d1">宠物标准美容</div>
+                    <div class="clearfix">
+                        <div class="left-v">
+                            <div class="service-price"><span>¥</span>288</div>
+                            <div class="title-l3">¥488</div>
+                            <div class="title-l4">已售 66688</div>
+                        </div>
+                        <div class="right-v">积分288</div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="petDetails.html">
+                <div class="detail-sl">
+                    <div class="title-d1">宠物标准美容</div>
+                    <div class="clearfix">
+                        <div class="left-v">
+                            <div class="service-price"><span>¥</span>288</div>
+                            <div class="title-l3">¥488</div>
+                            <div class="title-l4">已售 66688</div>
+                        </div>
+                        <div class="right-v">积分288</div>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+</body>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="resources/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="resources/js/bootstrap.min.js"></script>
+
+
+</html>

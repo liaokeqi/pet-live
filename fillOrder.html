@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>填写订单</title>
+
+    <!-- Bootstrap -->
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/style.css">
+
+    <script type="text/javascript">
+
+        //html root的字体计算应该放在最前面，这样计算就不会有误差了/
+        //2016.3.23 wjq update 之所以要加个判断返回一个20.5，是因为当用户在谷歌等浏览器直接输入手机端网站网址时，如果用户设置模块自定义样式的高度比较小，由于这时候的clientWidth为1920px，及返回的_htmlFontSize为40，这时候就会使模块太小，展示不完全，因此先取一个较为准确的值去展示。Mobi.resetHtmlFontSize()顺便也加了
+        var _htmlFontSize = (function(){
+            var clientWidth = document.documentElement ? document.documentElement.clientWidth : document.body.clientWidth;
+            if(clientWidth > 640) clientWidth = 640;
+            document.documentElement.style.fontSize = clientWidth * 1/6.4+"px";
+            return clientWidth * 1/6.4;
+        })();
+    </script>
+</head>
+<body class="html" style="padding-bottom: 0.8rem;">
+    <div class="user-info">
+        <div class="clearfix get-info">
+            <div class="user-in2">
+                <span>蒋融瑶</span>
+                <span>13667257724</span>
+            </div>
+            <div class="details-ad">地址：湖北武汉市硚口区凯景国际大厦-古田二路凯景国际大厦5楼502</div>
+        </div>
+    </div>
+    <div class="order-con1">
+        <div class="clearfix good-info2">
+            <div class="pull-left order-img"><img src="resources/images/07.png" alt=""></div>
+            <div class="pull-left order-in1">
+                <div class="good-t1">法国皇室ROYAL CANIN小型犬离乳期奶糕1kg</div>
+                <div class="number-o">x1</div>
+            </div>
+        </div>
+        <div class="clearfix good-info2">
+            <div class="pull-left order-img"><img src="resources/images/07.png" alt=""></div>
+            <div class="pull-left order-in1">
+                <div class="good-t1">法国皇室ROYAL CANIN小型犬离乳期奶糕1kg</div>
+                <div class="number-o">x1</div>
+            </div>
+        </div>
+        <div class="price-order">共1件商品 合计：<span>¥ </span><span>256.00</span></div>
+    </div>
+<!--提交订单-->
+<div class="update-order">
+    <div class="heji text-right">
+        <div class="price-order down-price">合计：<span>¥ </span><span>256.00</span></div>
+    </div>
+    <div class="tijiao"><a href="#">提交订单</a></div>
+</div>
+</body>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="resources/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="resources/js/bootstrap.min.js"></script>
+
+</html>

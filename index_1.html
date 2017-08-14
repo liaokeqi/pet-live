@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+
+    <!-- Bootstrap -->
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/style.css">
+
+	<script type="text/javascript">
+    
+    //html root的字体计算应该放在最前面，这样计算就不会有误差了/
+    //2016.3.23 wjq update 之所以要加个判断返回一个20.5，是因为当用户在谷歌等浏览器直接输入手机端网站网址时，如果用户设置模块自定义样式的高度比较小，由于这时候的clientWidth为1920px，及返回的_htmlFontSize为40，这时候就会使模块太小，展示不完全，因此先取一个较为准确的值去展示。Mobi.resetHtmlFontSize()顺便也加了
+    var _htmlFontSize = (function(){
+        var clientWidth = document.documentElement ? document.documentElement.clientWidth : document.body.clientWidth;
+        if(clientWidth > 640) clientWidth = 640;
+        document.documentElement.style.fontSize = clientWidth * 1/6.4+"px";
+        return clientWidth * 1/6.4;
+    })();
+	</script>
+  </head>
+<body class="html">
+    <div class="content">
+          <div class="clearfix header text-center">
+              <!--<a class="pull-left img-l" href="#"><img class="" src="images/left.jpg" alt=""></a>-->
+              <a class="img-r" href="#"><img src="resources/images/right1.png" alt=""></a>
+              <div class="head-tt">首页</div>
+          </div>
+    </div>
+    <!--滚动视图-->
+    <div id="carousel-example-generic" class="carousel slide car-sli" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators car-in">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href=""><img src="resources/images/banner.png" alt="..."></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="resources/images/banner.png" alt="..."></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="resources/images/banner.png" alt="..."></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="resources/images/banner.png" alt="..."></a>
+            </div>
+            <div class="item">
+                <a href=""><img src="resources/images/banner.png" alt="..."></a>
+            </div>
+        </div>
+    </div>
+    <!--搜索框-->
+    <div class="search">
+        <input type="search" class="form-control form-in" id="inputPassword" placeholder="犬心保体内驱虫药">
+    </div>
+    <!--分类-->
+    <div class="clearfix classification">
+        <div class="col-xs-3">
+            <a class="cfa1" href="goodsList_1.html">进口猫粮</a>
+        </div>
+        <div class="col-xs-3">
+            <a class="cfa2" href="">经济猫粮</a>
+        </div>
+        <div class="col-xs-3">
+            <a class="cfa3" href="">猫咪医药</a>
+        </div>
+        <div class="col-xs-3">
+            <a class="cfa4" href="">清洁猫砂</a>
+        </div>
+        <div class="col-xs-3">
+            <a class="cfa5" href="">进口狗粮</a>
+        </div>
+        <div class="col-xs-3">
+            <a class="cfa6" href="">经济狗粮</a>
+        </div>
+        <div class="col-xs-3">
+            <a class="cfa7" href="">狗狗医药</a>
+        </div>
+        <div class="col-xs-3">
+            <a class="cfa8" href="">零食玩具</a>
+        </div>
+    </div>
+    <!--爱宠物-->
+    <div class="pet-props">
+        <div class="title-1">爱宠物</div>
+        <ul class="list-ul1">
+            <li>
+                <div class="col-xs-6 col6-1">
+                    <div class="half1 text-center">
+                        <p class="title-p1">进口狗粮</p>
+                        <p class="title-p2"><span>¥</span>128</p>
+                    </div>
+                    <div class="half1 text-center">
+                        <img src="resources/images/02.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="half1 text-center">
+                        <p class="title-p1">进口狗粮</p>
+                        <p class="title-p2"><span>¥</span>128</p>
+                    </div>
+                    <div class="half1 text-center">
+                        <img src="resources/images/02.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-xs-6 col6-1">
+                    <div class="half1 text-center">
+                        <p class="title-p1">进口狗粮</p>
+                        <p class="title-p2"><span>¥</span>128</p>
+                    </div>
+                    <div class="half1 text-center">
+                        <img src="resources/images/02.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="half1 text-center">
+                        <p class="title-p1">进口狗粮</p>
+                        <p class="title-p2"><span>¥</span>128</p>
+                    </div>
+                    <div class="half1 text-center">
+                        <img src="resources/images/02.png" alt="">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="col-xs-6 col6-1">
+                    <div class="half1 text-center">
+                        <p class="title-p1">进口狗粮</p>
+                        <p class="title-p2"><span>¥</span>128</p>
+                    </div>
+                    <div class="half1 text-center">
+                        <img src="resources/images/02.png" alt="">
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="half1 text-center">
+                        <p class="title-p1">进口狗粮</p>
+                        <p class="title-p2"><span>¥</span>128</p>
+                    </div>
+                    <div class="half1 text-center">
+                        <img src="resources/images/02.png" alt="">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="resources/js/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="resources/js/bootstrap.min.js"></script>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>已收货详情</title>
+
+    <!-- Bootstrap -->
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/style.css">
+
+    <script type="text/javascript">
+
+        //html root的字体计算应该放在最前面，这样计算就不会有误差了/
+        //2016.3.23 wjq update 之所以要加个判断返回一个20.5，是因为当用户在谷歌等浏览器直接输入手机端网站网址时，如果用户设置模块自定义样式的高度比较小，由于这时候的clientWidth为1920px，及返回的_htmlFontSize为40，这时候就会使模块太小，展示不完全，因此先取一个较为准确的值去展示。Mobi.resetHtmlFontSize()顺便也加了
+        var _htmlFontSize = (function(){
+            var clientWidth = document.documentElement ? document.documentElement.clientWidth : document.body.clientWidth;
+            if(clientWidth > 640) clientWidth = 640;
+            document.documentElement.style.fontSize = clientWidth * 1/6.4+"px";
+            return clientWidth * 1/6.4;
+        })();
+    </script>
+</head>
+<body class="html" style="background-color: #fff;">
+<div class="head-state">
+    <span class="span-h1">交易成功</span>
+</div>
+<ul class="deal">
+    <li>
+        <div class="qianshou">已签收，期待再次为您服务！ </div>
+    </li>
+    <li>
+        <div class="clearfix get-info show-in">
+            <div class="user-in2">
+                <span>蒋融瑶</span>
+                <span>13667257724</span>
+            </div>
+            <div class="details-ad">地址：湖北武汉市硚口区凯景国际大厦-古田二路凯景国际大厦5楼502</div>
+        </div>
+    </li>
+    <li class="no-padding">
+        <div class="clearfix order-details">
+            <div class="order-h1 head-ot1">
+                <div class="pull-left order-number">订单号：120160406111534</div>
+            </div>
+            <div class="clearfix good-info">
+                <div class="pull-left order-img"><img src="resources/images/07.png" alt=""></div>
+                <div class="pull-left order-in1">
+                    <div class="good-t1">法国皇室ROYAL CANIN小型犬离乳期奶糕1kg</div>
+                    <div class="number-o">x1</div>
+                </div>
+            </div>
+            <div class="clearfix moneys">
+                <div class="pull-left">订单总价（含运费）</div>
+                <div class="pull-right down-price2">¥<span>128.00</span></div>
+            </div>
+        </div>
+    </li>
+    <li class="no-padding">
+        <div class="order-info1">
+            <p>订单编号：3277720160318114123</p>
+            <p>下单时间：2017-03-18 11:41:23</p>
+        </div>
+        <div class="distribution">配送方式：百世快递</div>
+    </li>
+</ul>
+</body>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="resources/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="resources/js/bootstrap.min.js"></script>
+
+</html>

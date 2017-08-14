@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>商品详情</title>
+
+    <!-- Bootstrap -->
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/style.css">
+
+    <script type="text/javascript">
+
+        //html root的字体计算应该放在最前面，这样计算就不会有误差了/
+        //2016.3.23 wjq update 之所以要加个判断返回一个20.5，是因为当用户在谷歌等浏览器直接输入手机端网站网址时，如果用户设置模块自定义样式的高度比较小，由于这时候的clientWidth为1920px，及返回的_htmlFontSize为40，这时候就会使模块太小，展示不完全，因此先取一个较为准确的值去展示。Mobi.resetHtmlFontSize()顺便也加了
+        var _htmlFontSize = (function(){
+            var clientWidth = document.documentElement ? document.documentElement.clientWidth : document.body.clientWidth;
+            if(clientWidth > 640) clientWidth = 640;
+            document.documentElement.style.fontSize = clientWidth * 1/6.4+"px";
+            return clientWidth * 1/6.4;
+        })();
+    </script>
+</head>
+<body class="html">
+<!--内容部分-->
+<div class="bs-example bs-example-tabs bs-et" data-example-id="togglable-tabs">
+    <ul id="myTabs" class="nav nav-tabs nav-bs nav-bs3" role="tablist">
+        <li role="presentation" class="first-li active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"><span>商品</span></a></li>
+        <li role="presentation" class="first-li"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">详情</a></li>
+        <li role="presentation"><a href="#profile2" role="tab" id="profile-tab2" data-toggle="tab" aria-controls="profile">评价</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content pace-head">
+        <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+            <img style="width: 100%;" src="resources/images/05.png" alt="">
+            <div class="detail-v1">
+                <div class="title-d1">法国皇室ROYAL CANIN小型犬离乳期奶糕1kg</div>
+                <div class="clearfix">
+                    <div class="left-v">
+                        <div class="title-l2s"><span>¥</span>128</div>
+                        <div class="title-l3">¥286</div>
+                        <div class="title-l4">已售 65888</div>
+                    </div>
+                    <div class="right-v">积分128</div>
+                </div>
+            </div>
+            <div class="evaluation">
+                <div class="evaluation-h">
+                    <div class="text-center lines"><div class="line1"></div></div>
+                    <div class="title-ev">评价</div>
+                </div>
+                <div class="evaluation-in">
+                    <span class="name1">蒋融瑶</span>
+                    <span class="dengji">铂金会员</span>
+                    <div class="times">2017-08-01</div>
+                    <div class="evaluation-nr">不错哦，小狗很爱吃，下次会继续购买！</div>
+                    <div class="more-v text-center">
+                        <a class="morea" href="">查看全部评价</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+            <img style="width: 100%;" src="resources/images/06.png" alt="">
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="profile2" aria-labelledby="profile-tab">
+            <div class="evaluation-in in2">
+                <span class="name1">蒋融瑶</span>
+                <span class="dengji">铂金会员</span>
+                <div class="times">2017-08-01</div>
+                <div class="evaluation-nr">不错哦，小狗很爱吃，下次会继续购买！</div>
+            </div>
+            <div class="evaluation-in in2">
+                <span class="name1">蒋融瑶</span>
+                <span class="dengji">铂金会员</span>
+                <div class="times">2017-08-01</div>
+                <div class="evaluation-nr">不错哦，小狗很爱吃，下次会继续购买！</div>
+            </div>
+            <div class="evaluation-in in2">
+                <span class="name1">蒋融瑶</span>
+                <span class="dengji">铂金会员</span>
+                <div class="times">2017-08-01</div>
+                <div class="evaluation-nr">不错哦，小狗很爱吃，下次会继续购买！</div>
+            </div>
+            <div class="evaluation-in in2">
+                <span class="name1">蒋融瑶</span>
+                <span class="dengji">铂金会员</span>
+                <div class="times">2017-08-01</div>
+                <div class="evaluation-nr">不错哦，小狗很爱吃，下次会继续购买！</div>
+            </div>
+            <div class="evaluation-in in2">
+                <span class="name1">蒋融瑶</span>
+                <span class="dengji">铂金会员</span>
+                <div class="times">2017-08-01</div>
+                <div class="evaluation-nr">不错哦，小狗很爱吃，下次会继续购买！</div>
+            </div>
+            <div class="evaluation-in in2">
+                <span class="name1">蒋融瑶</span>
+                <span class="dengji">铂金会员</span>
+                <div class="times">2017-08-01</div>
+                <div class="evaluation-nr">不错哦，小狗很爱吃，下次会继续购买！</div>
+            </div>
+            <div class="evaluation-in in2">
+                <span class="name1">蒋融瑶</span>
+                <span class="dengji">铂金会员</span>
+                <div class="times">2017-08-01</div>
+                <div class="evaluation-nr">不错哦，小狗很爱吃，下次会继续购买！</div>
+            </div>
+            <div class="evaluation-in in2">
+                <span class="name1">蒋融瑶</span>
+                <span class="dengji">铂金会员</span>
+                <div class="times">2017-08-01</div>
+                <div class="evaluation-nr">不错哦，小狗很爱吃，下次会继续购买！</div>
+            </div>
+            <div class="evaluation-in in2">
+                <span class="name1">蒋融瑶</span>
+                <span class="dengji">铂金会员</span>
+                <div class="times">2017-08-01</div>
+                <div class="evaluation-nr">不错哦，小狗很爱吃，下次会继续购买！</div>
+            </div>
+            <div class="evaluation-in in2">
+                <span class="name1">蒋融瑶</span>
+                <span class="dengji">铂金会员</span>
+                <div class="times">2017-08-01</div>
+                <div class="evaluation-nr">不错哦，小狗很爱吃，下次会继续购买！</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部内容-->
+<div class="foot">
+    <a href="" class="first-a1"></a>
+    <a href="" class="first-a2">加入购物车</a>
+    <a  class="first-a3" >立即购买</a>
+</div>
+<!--加入购物车-->
+<div class="shopping" id="goods">
+    <div class="head-gd" role="button"></div>
+    <div class="good-s">
+        <div class="clearfix good-h1">
+            <div class="img-1"><img src="resources/images/07.png" alt=""></div>
+            <div class="good-in1">
+                <div class="good-n">法国皇室ROYAL CANIN小型犬离乳期奶糕1kg</div>
+                <div class="title-l2s"><span>¥</span>128</div>
+            </div>
+        </div>
+        <div class="clearfix number">
+            <div class="left-v2">数量</div>
+            <div class="right-v2">
+                <em class="jian"></em>
+                <input type="text" id="addnumber" value="1" class="num"/>
+                <em class="add"></em>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="resources/js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="resources/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+//加的效果
+        $(".add").click(function(){
+            var n=$(this).prev().val();
+            var num=parseInt(n)+1;
+            if(num==0){ return;}
+            $(this).prev().val(num);
+        });
+//减的效果
+        $(".jian").click(function(){
+            var n=$(this).next().val();
+            var num=parseInt(n)-1;
+            if(num==0){ return}
+            $(this).next().val(num);
+        });
+
+        $(".first-a3").click(function () {
+            $(".shopping").toggleClass("show")
+
+        });
+        $(".head-gd").click(function () {
+            $(".shopping").removeClass("show")
+        });
+    });
+
+    window.onload = function(){
+
+        var a = document.getElementById('goods');
+        // 获取屏幕高度 document.documentElement.clientHeight
+        a.style.width = document.documentElement.clientWidth+ "px";
+        a.style.height = document.documentElement.clientHeight+ "px";
+
+    }
+</script>
+
+</html>
