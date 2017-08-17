@@ -281,7 +281,7 @@ a:focus {  text-decoration: none;}
 
 	/*列表页*/
 .pace-head2 {margin-top: 0.8rem;}
-.form-in2 { padding-left: 0.4rem; color:#DADADA; background:#fff url("../images/icon1.png") left 0.15rem center  no-repeat;border-radius: 0.3rem; border: none;width: 60%; display: inline-block; padding-left: 0.6rem}
+.form-in2 { color:#DADADA; background:#fff url("../images/icon1.png") left 0.15rem center  no-repeat;border-radius: 0.3rem; border: none;width: 60%; display: inline-block; padding-left: 0.6rem;height: 0.5rem;}
 .down {font-size: 0.18px; padding-left: 0.3rem; color: #666666;}
 .nav-bs2 li {border-bottom: none;}
 .nav-bs2 li.first-li a {border-right: 1px solid #d8d8d8 !important; }
@@ -387,7 +387,7 @@ a:focus {  text-decoration: none;}
 .combineds {line-height: 1rem;font-size: 0.3rem; font-weight: 300;}
 .price {color: #FC4A00; font-size: 0.28rem; font-weight: 300; margin-left: 0.15rem;}
 /*服务*/
-.select-address {width:0.9rem;background-color: transparent; border: 0; border-radius: 0; float: left; box-shadow:none; background: url("../images/icon12.png") right center no-repeat; color: #fff; padding: 0; font-size: 0.26rem; font-weight: 300;}
+.select-address {width:0.9rem;background-color: transparent; border: 0; border-radius: 0; float: left; box-shadow:none; background: url("../images/icon12.png") right center no-repeat; color: #fff; padding: 0; font-size: 0.26rem; font-weight: 300;height: 0.5rem;}
 .select-address:focus {border: none; box-shadow:none;}
 .col6-3 {border-right: 2px solid #fafafa;}
 .service-ul li .col-xs-6{padding: 0; height: 4.3rem;}
@@ -396,6 +396,9 @@ a:focus {  text-decoration: none;}
 .service-l1 , .service-l2 {font-size: 0.18rem; font-weight: lighter; color: #666;}
 .service-l2 {min-width: 82%; overflow: hidden;}
 .service-l2 span {display: inline-block; margin-left: 0.1rem;}
+.address-now {padding: 0.2rem; padding-left: 0.5rem; background: url("../images/icon30.png") left 0.2rem center no-repeat;}
+.nav-service>li.first-li.active>a , .nav-service>li.first-li>a { border-right: none !important;}
+.nav-service>li.first-li.active , .nav-service>li.first-li  { border-right: 2px solid #fafafa; !important; }
 /*服务详情页*/
 .service-title1 {margin-top: 0.2rem; padding:0.5rem 0.25rem; font-size: 0.3rem; border-bottom: 1px solid #dcdcdc; background-color: #fff; }
 .service-con2 { padding:0.2rem 0rem;border-bottom: 1px solid #dcdcdc; background-color: #fff;}
