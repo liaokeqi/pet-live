@@ -352,10 +352,16 @@ a:focus {  text-decoration: none;}
 /*加入购物车*/
 .head-gd {width: 100%; height: 50%;background-color: transparent; position: absolute; top: 0; left: 0;}
 /*.shopping {position: absolute; background-color: rgba(0, 0, 0, 0.3); top: 0; display: none; padding-bottom: 1rem;}*/
-.shopping {position: absolute; background-color: rgba(0, 0, 0, 0.3); top: 0; opacity: 0; margin-bottom: -200%; padding-bottom: 1rem;}
+.shopping {position: fixed; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); top: 0; opacity: 0; margin-bottom: -200%;}
 .shopping:focus{display: none; cursor: pointer;}
 
-.good-s {position: absolute; bottom: 0; height: 50%; width: 100%; background-color: #fff; z-index: 1000; padding-bottom: 1rem;}
+.foots2 {position: absolute; bottom: 0; left: 0; height:0.8rem; background: #fff; width: 100%; z-index: 99999;}
+.foots2 a {float: left; text-align: center; font-weight: 300;}
+.first-a4 {width: 20%; height: 100%; display: inline-block; background: url("../images/bg6.png") center no-repeat; }
+.first-a5 {width: 40%; height: 100%; display: inline-block; background:#ff9f00; color: #fff;font-size: 0.25rem; line-height: 0.8rem; }
+.first-a6 {width: 40%; height: 100%; display: inline-block; background:#fc4a00;color: #fff;font-size: 0.25rem;  line-height: 0.8rem;}
+
+.good-s {position: absolute; bottom: 0; height: 50%; width: 100%; background-color: #fff; z-index: 1000; }
 .good-h1 {padding: 0.15rem; border-bottom: 1px solid #d7d7d7;}
 .img-1 {float: left;}
 .good-in1 {float: left; padding: 0 0.15rem; width: 4.76rem;}
@@ -438,7 +444,7 @@ a:focus {  text-decoration: none;}
 .pet-dt p {font-size: 0.2rem;color: #666; margin-bottom: 0; display: block; }
 .pet-dt .last-s1 {margin-top: 0.25rem; margin-bottom: 0.1rem;}
 
-.foot-details {}
+/*.foot-details {}*/
 .foot-details {position: absolute; bottom: 0; left: 0; height:1rem; background: #fff; width: 100%; z-index: 9999;}
 .foot-details a {float: left; text-align: center; font-weight: 300;}
 .secon-a1 {width: 20%; height: 100%; display: inline-block; background: url("../images/bg6.png") center no-repeat; }

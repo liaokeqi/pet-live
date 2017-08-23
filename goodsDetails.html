@@ -154,6 +154,11 @@
             </div>
         </div>
     </div>
+    <div class="foots2">
+        <a role="button" onclick="showHide();" href="#" class="first-a4"></a>
+        <a role="button" onclick="showHide();" href="#" class="first-a5">加入购物车</a>
+        <a role="button" onclick="showHide();" href="#"  class="first-a6" >立即购买</a>
+    </div>
 </div>
 
 </body>
@@ -163,8 +168,16 @@
 <script src="resources/js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="resources/js/bootstrap.min.js"></script>
+<script src="resources/js/toast.js"></script>
 
 <script>
+
+//    隐藏弹出的购买框
+    function  showHide() {
+        $(".shopping").removeClass("show");
+        $(".foot").show();
+    };
+
     $(document).ready(function(){
 //加的效果
         $(".add").click(function(){
@@ -182,11 +195,14 @@
         });
 
         $(".first-a3").click(function () {
-            $(".shopping").toggleClass("show")
-
+            $(".shopping").toggleClass("show");
+            $(".foot").hide();
         });
+
+
         $(".head-gd").click(function () {
-            $(".shopping").removeClass("show")
+            $(".shopping").removeClass("show");
+            $(".foot").show();
         });
     });
 

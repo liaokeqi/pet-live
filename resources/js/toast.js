@@ -19,6 +19,7 @@ function Toast(msg,duration){
         setTimeout(function() { document.body.removeChild(m) }, d * 1000);
     }, duration);
 
+    console.log("111111");
 };
 
 
