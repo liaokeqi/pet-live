@@ -58,11 +58,15 @@ a:focus {  text-decoration: none;}
 /*爱宠物*/
 .pet-props {margin-top: 0.2rem; border-top: 1px solid #dbdbdb;}
 .title-1 {color: #FC4A00;  text-align: center; padding: 0.15rem 0; background-color: #f9f9f9;}
-.list-ul1 {background-color: #fff; margin-bottom: 0.2rem;}
+.list-ul1 {background-color: #fff; margin-bottom: 0.2rem; display: inline-block; width: 100%;}
+
 .list-ul1 li {border-bottom: 1px solid #d0d0d0; display: inline-block;  width: 100%;  height: 1.78rem; margin-bottom: -0.07rem;}
+
 .half1 {width: 50%; float: left;padding-top: 0.32rem; overflow: hidden;}
 .half1 img {max-width:0.92rem; max-height: 1.28rem;}
-.list-ul1 .col-xs-6 {height: 100%;}
+/*.list-ul1 .col-xs-6 {height: 100%;}*/
+.list-ul1 .col-xs-6 {border-bottom: 1px solid #d0d0d0; float: left;  width: 50%;  height: 1.78rem;}
+
 .col6-1 {border-right: 1px solid #d0d0d0;}
 .half1 p {margin-bottom: 0;}
 .title-p1 {font-size:0.25rem; color: #333333; }
@@ -396,7 +400,7 @@ a:focus {  text-decoration: none;}
 .pace-head3 {position: fixed;  width: 100%; z-index: 1000; background-color: #f2f2f2;}
 .col6-3 {border-right: 2px solid #fafafa;}
 .service-ul {margin-top: 2.28rem;}
-.service-ul li .col-xs-6{padding: 0; height: 4.3rem;}
+.service-ul li .col-xs-6{padding: 0; height: 4.3rem; border-bottom: 2px solid #fafafa; overflow: hidden; }
 .service-con {padding: 0.2rem;}
 .service-title {font-size: 0.25rem; height: 0.7rem; overflow: hidden;text-align: left; font-weight: 400; margin-bottom: 0.35rem; color: #333;}
 .service-l1 , .service-l2 {font-size: 0.18rem; font-weight: lighter; color: #666;}
