@@ -37,7 +37,20 @@
 <div class="bs-example bs-example-tabs pace-head3" data-example-id="togglable-tabs">
     <div class="pace-head2 address-now">湖北省武汉市硚口区古田二路凯景国际大厦502</div>
     <ul id="myTabs" class="nav nav-tabs nav-bs nav-bs2 nav-service" role="tablist">
-        <li role="presentation" class="first-li active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">区域选择</a></li>
+        <li role="presentation" class="first-li active">
+            <!--<a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">区域选择</a>-->
+            <span class="get-ad">区域选择</span>
+            <select class="form-control select-address">
+                <option value="2" >重庆</option>
+                <option value="3" >成都</option>
+                <option value="4" >合肥</option>
+                <option value="5" >浙江</option>
+                <option value="2" >重庆</option>
+                <option value="3" >成都</option>
+                <option value="4" >合肥</option>
+                <option value="5" >浙江</option>
+            </select>
+        </li>
         <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">距离排序</a></li>
     </ul>
 </div>
@@ -104,5 +117,14 @@
 <script src="resources/js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="resources/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".first-li select").change(function () {
+            var getSelectVal = $(".first-li option:selected").text();
+            $(".first-li span").text(getSelectVal)
+        })
+    })
+</script>
 
 </html>
