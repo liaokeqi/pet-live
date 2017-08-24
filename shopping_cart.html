@@ -31,7 +31,7 @@
     </div>
 </div>
 <!--滚动购物列表-->
-<ul class="carts pace-head">
+<ul class="carts pace-head" id="carts">
     <li>
         <div class="pull-left select-l">
             <a class="select-a"></a>
@@ -169,13 +169,16 @@
     });
 
     $(".select-a").click(function () {
-        if ($(".select-a").hasClass("selected-a2")){
+        if ($(this).hasClass("selected-a2")){
             $(".select-a2").removeClass("selected-a")
-            $(".select-a").removeClass("selected-a2")
+            $(this).removeClass("selected-a2")
+        } else{
+            $(this).toggleClass("selected-a")
         }
-        $(this).toggleClass("selected-a")
+
 
     });
+
     $(".select-a2").click(function () {
         if ($(".select-a").hasClass("selected-a")){
             $(".select-a").removeClass("selected-a")
@@ -184,7 +187,9 @@
         $(".select-a").toggleClass("selected-a2")
 
     });
-
+    
+    
+    
 </script>
 
 </html>
