@@ -284,8 +284,9 @@ img{max-width: 100%;}
 .span-h5 {background: url("../images/icon27.png") left 0.1rem center no-repeat;}
 
 	/*列表页*/
+/*.header {width: 60%; margin: auto;}*/
 .pace-head2 {margin-top: 0.8rem; }
-.form-in2 { color:#DADADA; border-radius: 0.3rem; border: none; display: inline-block; padding-left: 0.6rem;height: 0.5rem;}
+.form-in2 { color:#DADADA; border-radius: 0.3rem; border: none; display: inline-block; padding-right: 0.6rem;height: 0.5rem;}
 .search-2 {display: inline-block; position:absolute; left: 0.3rem; top: 0.1rem;  height: 0.5rem;padding:0 0.2rem; background: transparent url("../images/icon1.png") center no-repeat; }
 .down {font-size: 0.18px; padding-left: 0.3rem; color: #666666;}
 .nav-bs2 li {border-bottom: none;}
@@ -299,13 +300,14 @@ img{max-width: 100%;}
 /*.nav-bs2>li.active>a:hover .glyphicon-triangle-bottom:before , .nav-bs2>li.active>a .glyphicon-triangle-bottom:before {content: "\e253"}*/
 .list-ul2 {background-color: #fff; display: inline-block; width: 100%; margin-bottom: 0.2rem;}
 .list-ul2 li {border-bottom: 2px solid #fafafa; display: inline-block; margin-bottom: -0.07rem; width: 100%;}
-.list-ul2 li .col-xs-6 {padding: 0.2rem; width: 50%;}
+.list-ul2 li .col-xs-6 {padding: 0.2rem; width: 50%; border-bottom: 2px solid #fafafa;}
 .list-ul2 img {max-width: 100%; width:3.2rem; height: 2.6rem;}
 .title-2 {font-size: 0.25rem; max-height: 0.8rem; overflow: hidden;text-align: left; margin-top: 0.2rem; font-weight: 400;}
 .con1 {margin-top: 0.1rem;}
 .title-l1 {float: left; font-weight: 300; font-size: 0.3rem; color:#FC4A00; }
 .title-l1 span {font-size: 0.23rem; font-weight: lighter; margin-right: 0.1rem;}
 .title-l2 {float: right; font-size: 0.22rem; font-weight: 200; color:#999999;margin-top: 0.08rem; }
+/*.col6-2 a {display: block; width: 100%;}*/
 .col6-2 {border-right: 2px solid #fafafa;}
 
 /*商品详情*/
@@ -350,7 +352,7 @@ img{max-width: 100%;}
 /*加入购物车*/
 .head-gd {width: 100%; height: 50%;background-color: transparent; position: absolute; top: 0; left: 0;}
 /*.shopping {position: absolute; background-color: rgba(0, 0, 0, 0.3); top: 0; display: none; padding-bottom: 1rem;}*/
-.shopping {position: fixed; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); top: 0; opacity: 0; margin-bottom: -200%;}
+.shopping {position: fixed; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); opacity: 0; bottom: -150%; }
 .shopping:focus{display: none; cursor: pointer;}
 
 .foots2 {position: absolute; bottom: 0; left: 0; height:0.8rem; background: #fff; width: 100%; z-index: 99999;}
@@ -374,7 +376,7 @@ img{max-width: 100%;}
 
 /*显示隐藏项*/
 /*.show {opacity:1; transition: 2s alls; display: block; }*/
-.show {opacity:1; transition: 1s all;  margin-bottom: 0rem;}
+.show {opacity:1; transition: 1s all;  bottom:0; top: 0;}
 
 /*购物车*/
 .carts {margin-bottom: 0.8rem;}
@@ -401,7 +403,7 @@ img{max-width: 100%;}
 /*服务*/
 /*.select-address {width:0.9rem;background-color: transparent; border: 0; border-radius: 0; float: left; box-shadow:none; background: url("../images/icon12.png") right center no-repeat; color: #fff; padding: 0; font-size: 0.26rem; font-weight: 300;height: 0.5rem;}*/
 /*.select-address:focus {border: none; box-shadow:none;}*/
-.search-a2 {display: inline-block; position:absolute; left: 0.1rem; top: 0rem;  height: 0.5rem;padding:0 0.2rem; background: transparent url("../images/icon1.png") center no-repeat;}
+.search-a2 {display: inline-block; position:absolute; right: 0.1rem; top: 0rem;  height: 0.5rem;padding:0 0.2rem; background: transparent url("../images/icon1.png") center no-repeat;}
 .pace-head3 {position: fixed;  width: 100%; z-index: 1000; background-color: #f2f2f2;}
 .col6-3 {border-right: 2px solid #fafafa;}
 .service-ul {margin-top: 2.28rem;}
@@ -444,11 +446,11 @@ img{max-width: 100%;}
 .pet-dt .last-s1 {margin-top: 0.25rem; margin-bottom: 0.1rem;}
 
 /*.foot-details {}*/
-.foot-details {position: absolute; bottom: 0; left: 0; height:1rem; background: #fff; width: 100%; z-index: 9999;}
+.foot-details {position: absolute; bottom: 0; left: 0; height:0.8rem; background: #fff; width: 100%; z-index: 9999;}
 .foot-details a {float: left; text-align: center; font-weight: 300;}
 .secon-a1 {width: 20%; height: 100%; display: inline-block; background: url("../images/bg6.png") center no-repeat; }
-.secon-a2 {width: 40%; height: 100%; display: inline-block; background:#ff9f00; color: #fff;font-size: 0.4rem; line-height: 1rem; }
-.secon-a3 {width: 40%; height: 100%; display: inline-block; background:#fc4a00;color: #fff;font-size: 0.4rem;  line-height: 1rem;}
+.secon-a2 {width: 40%; height: 100%; display: inline-block; background:#ff9f00; color: #fff;font-size: 0.25rem; line-height: 0.8rem; }
+.secon-a3 {width: 40%; height: 100%; display: inline-block; background:#fc4a00;color: #fff;font-size: 0.25rem;  line-height: 0.8rem;}
 
 /*宠物定制生活*/
 .custom {background: url("../images/bg9.png") center no-repeat; background-size: 100% 100%; padding: 0.13rem;padding-top:1.43rem; overflow: hidden; }
@@ -486,9 +488,6 @@ img{max-width: 100%;}
 .view4 a {display: block; padding: 0.05rem 0; width: 100%;border: 1px solid #bbb; color: #666; border-radius: 0.12rem;}
 .view4 a:focus {border-color:#fc4a00; color: #fc4a00; }
 .queding {display: inline-block; background-color: #fc4a00; color: #fff; padding:0.1rem 0.9rem; border-radius: 0.08rem; margin-top: 0.4rem;}
-
-
-
 
 
 /*专属狗狗定制*/
