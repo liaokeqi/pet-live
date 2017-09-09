@@ -31,7 +31,8 @@
         <div class="pull-left address-t1">
             <a href="">硚口区古田三路凯景国际大厦旁旺旺宠物医院</a>
         </div>
-        <div class="pull-right call"><a href=""></a></div>
+        <div class="pull-right call"><a role="button" class="box2" data-toggle="modal" data-target="#associatefalse" ></a></div>
+
     </div>
     <ul class="details-s">
         <li>
@@ -85,6 +86,26 @@
     </ul>
 </div>
 
+<!-- Modal 弹框关联失败提示 -->
+<div class="modal fade" id="associatefalse" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-associated">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group associated">
+                        <div class="associate-false clearfix">
+                            <div class="title-ns">联系方式</div>
+                            <div class="title-ns2">13667257724</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer max-btn">
+                <button type="button" class="associate-determine" data-dismiss="modal">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 
@@ -93,6 +114,5 @@
 <script src="resources/js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="resources/js/bootstrap.min.js"></script>
-
 
 </html>

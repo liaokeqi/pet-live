@@ -24,13 +24,50 @@
 </head>
 <body class="html" style="padding-bottom: 0.8rem;">
     <div class="user-info">
-        <div class="clearfix get-info">
-            <div class="user-in2">
-                <span>蒋融瑶</span>
-                <span>13667257724</span>
+        <a href="#">
+            <div class="clearfix get-info">
+                <div class="user-in2">
+                    <span>蒋融瑶</span>
+                    <span>13667257724</span>
+                </div>
+                <div class="details-ad">地址：湖北武汉市硚口区凯景国际大厦-古田二路凯景国际大厦5楼502</div>
             </div>
-            <div class="details-ad">地址：湖北武汉市硚口区凯景国际大厦-古田二路凯景国际大厦5楼502</div>
-        </div>
+        </a>
+        <ul class="show-add">
+            <li>
+                <a href="">
+                    <div class="clearfix get-info">
+                        <div class="user-in2">
+                            <span>蒋融瑶</span>
+                            <span>13667257724</span>
+                        </div>
+                        <div class="details-ad">地址：湖北武汉市硚口区凯景国际大厦-古田二路凯景国际大厦5楼502</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="clearfix get-info">
+                        <div class="user-in2">
+                            <span>蒋融瑶</span>
+                            <span>13667257724</span>
+                        </div>
+                        <div class="details-ad">地址：湖北武汉市硚口区凯景国际大厦-古田二路凯景国际大厦5楼502</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="clearfix get-info">
+                        <div class="user-in2">
+                            <span>蒋融瑶</span>
+                            <span>13667257724</span>
+                        </div>
+                        <div class="details-ad">地址：湖北武汉市硚口区凯景国际大厦-古田二路凯景国际大厦5楼502</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
     </div>
     <div class="order-con1">
         <div class="clearfix good-info2">
@@ -63,5 +100,14 @@
 <script src="resources/js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="resources/js/bootstrap.min.js"></script>
+
+<script>
+    $(".user-info a").click(function () {
+        $(".show-add").toggleClass("show2");
+    });
+    $(".show-add li a").click(function () {
+        $(".show-add").removeClass("show2");
+    });
+</script>
 
 </html>
