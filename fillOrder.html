@@ -24,18 +24,21 @@
 </head>
 <body class="html" style="padding-bottom: 0.8rem;">
     <div class="user-info">
-        <a href="#">
-            <div class="clearfix get-info">
-                <div class="user-in2">
-                    <span>蒋融瑶</span>
-                    <span>13667257724</span>
+        <div class="address-de">
+            <a href="#">
+                <div class="clearfix get-info">
+                    <div class="user-in2">
+                        <span>蒋融瑶</span>
+                        <span>13667257724</span>
+                    </div>
+                    <div class="details-ad">地址：湖北武汉市硚口区凯景国际大厦-古田二路凯景国际大厦5楼502</div>
                 </div>
-                <div class="details-ad">地址：湖北武汉市硚口区凯景国际大厦-古田二路凯景国际大厦5楼502</div>
-            </div>
-        </a>
+            </a>
+        </div>
+
         <ul class="show-add">
             <li>
-                <a href="">
+                <a class="select-li" href="#">
                     <div class="clearfix get-info">
                         <div class="user-in2">
                             <span>蒋融瑶</span>
@@ -46,10 +49,10 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a>
                     <div class="clearfix get-info">
                         <div class="user-in2">
-                            <span>蒋融瑶</span>
+                            <span>蒋融瑶1</span>
                             <span>13667257724</span>
                         </div>
                         <div class="details-ad">地址：湖北武汉市硚口区凯景国际大厦-古田二路凯景国际大厦5楼502</div>
@@ -57,10 +60,21 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a>
                     <div class="clearfix get-info">
                         <div class="user-in2">
-                            <span>蒋融瑶</span>
+                            <span>蒋融瑶2</span>
+                            <span>13667257724</span>
+                        </div>
+                        <div class="details-ad">地址：湖北武汉市硚口区凯景国际大厦-古田二路凯景国际大厦5楼502</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <div class="clearfix get-info">
+                        <div class="user-in2">
+                            <span>蒋融瑶3</span>
                             <span>13667257724</span>
                         </div>
                         <div class="details-ad">地址：湖北武汉市硚口区凯景国际大厦-古田二路凯景国际大厦5楼502</div>
@@ -102,12 +116,31 @@
 <script src="resources/js/bootstrap.min.js"></script>
 
 <script>
-    $(".user-info a").click(function () {
+    $(".address-de a").click(function () {
         $(".show-add").toggleClass("show2");
     });
     $(".show-add li a").click(function () {
         $(".show-add").removeClass("show2");
+        if ($(this).hasClass("select-li")){
+            $(this).removeClass("select-li");
+        }else {
+            $(".show-add li a").removeClass("select-li");
+            $(this).toggleClass("select-li");
+        }
+
     });
+
+
+
+
+$(".show-add li").click( function(){
+    var $tmp1 = $(this).find("a")
+    var $tmp2=$tmp1.clone();
+    $(".address-de a .get-info").replaceWith($tmp2.html());
+
+});
+
+
 </script>
 
 </html>
