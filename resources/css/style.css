@@ -41,11 +41,13 @@ img{max-width: 100%;}
 .car-in li {width:0.15rem; height: 0.15rem;border: none; background-color: #cacac7; margin: 0 0.05rem;}
 .car-in li.active {width:0.15rem; height: 0.15rem;border: none; background-color: #e95828; border-radius: 50%;}
 /*搜索框*/
-.search {background-color: #F6F6F6; padding: 0.1rem 0.15rem; position: relative; text-align: center; border-bottom: 1px solid #DBDBDB; position: relative;}
-.form-in { border-radius: 0.2rem; border: none; text-align: center; height: 0.5rem;}
-.search input[placeholder] {  padding-left: 0.4rem; color:#DADADA; }
+.logo1 {width:1.1rem; height: 0.24rem; float: left; margin: 0.13rem 0; display: inline-block;}
+.search {background-color: #F6F6F6; padding: 0.1rem 0.15rem; position: relative; text-align: center; border-bottom: 1px solid #DBDBDB; position: relative; }
+.form-in { border-radius: 0.2rem; border: none; text-align: left; height: 0.5rem;}
+.search input {border: 1px solid #000;}
+.search input[placeholder] {  padding-left: 0.2rem; color:#DADADA; width: 4.3rem; float: left; margin-left: 0.15rem;}
 .search input:focus {background: #fff;}
-.search-a {display: inline-block; position:absolute; right: 0.3rem; top: 0.1rem;  height: 0.5rem;padding:0 0.2rem; background: transparent url("../images/icon1.png") center no-repeat; }
+.search-a {display: inline-block; position:absolute; right: 0.2rem; top: 0.1rem;  height: 0.5rem;padding:0 0.2rem; background: transparent url("../images/icon31.jpg") center no-repeat; }
 /*分类选项*/
 .classification {background: #fff; padding: 0.2rem 0;}
 .cfa1 ,.cfa2 ,.cfa3 ,.cfa4 ,.cfa5 ,.cfa6 ,.cfa7 ,.cfa8 {padding-top: 0.9rem; padding-bottom: 0.3rem; color: #333; display: inline-block;}
